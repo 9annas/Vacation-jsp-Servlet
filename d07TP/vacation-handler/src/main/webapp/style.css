@@ -1,0 +1,141 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec. 15, 2021, 1:50:03 a.m.
+    Author     : isi
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*
+    Style pour le header
+*/
+
+ul {
+    /* on élimine les puces sur tous les ul */
+    list-style: none;
+    /* on élimine la marge intérieure par défaut des ul */
+    padding-left: 0;
+}
+
+a, a:hover, a:visited, a:active {
+    /* on élimine le soulignage des liens */
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+}
+
+.lien {
+    background-color: lightgrey;
+    flex-basis: 100%;
+    flex-grow: 1;
+    /*
+        flex: 1 1 100%; ou tout les propriétée:  flex-grow: 1 / flex-shrink: 1 / flex-basis: 100%
+        Tous les éléments ont la même largeur et la somme de leurs largeurs est équivalente à la largeur totale du parent.
+    */
+    text-align: center;
+}
+
+nav ul li a, nav ul li a:visited, nav ul li a:hover, nav ul li a:active {
+    /* le lien occupe la totalité du li en largeur */
+    width: 100%;
+    /* pour que le lien occupe la largeur et la hauteur prédéfinies */
+    display: block;
+    /* pour ajouter des marges intérieures et agrandir le block du lien */
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: grey;
+}
+
+/*
+    Style pour le footer
+*/
+footer {
+    position: relative;
+    border-top: black solid 4px;
+    margin-top: 20px;
+    padding-top: 5px;
+    background-color: lightgray;
+}
+
+.contact-info, .social-media {
+    display: inline-block;
+}
+
+.contact-info>p {
+    margin: 4px;
+}
+
+.social-media {
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.contact iframe {
+    margin-left: 15%;
+    height: 120px;
+}
+
+.contact .social-media {
+    top: 35%;
+}
+
+/*
+    Style pour le paiement
+*/
+fieldset {
+    width: 500px;
+    margin: auto;
+    background-color: lightgrey;
+}
+
+fieldset legend {
+    padding: 10px;
+    background-color: grey;
+    color: white;
+}
+
+fieldset div {
+    padding: 10px;
+}
+
+fieldset div label {
+    display: inline-block;
+    width: 175px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+fieldset+div {
+    text-align: center;
+    padding-top: 10px;
+}
+
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    margin: auto;
+    padding: 10px;
+}
+
+:required {
+    border: 3px solid black;
+}
+
+input:invalid {
+    border: 3px solid red;
+}
+
+
+
+
